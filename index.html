@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivshakti Job Notification - Latest Jobs, Admit Card, Result</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: #f4f6f9; color: #333; }
+    
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 20px 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    @media (min-width: 600px) {
+      .logo-container { flex-direction: row; text-align: left; }
+    }
+    .site-logo {
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #ffffff40;
+    }
+    header h1 { font-size: 24px; text-transform: uppercase; }
+    header p { font-size: 13px; margin-top: 4px; opacity: 0.9; }
+
+    .search-box { max-width: 600px; margin: 20px auto 10px auto; padding: 0 15px; }
+    .search-box input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .card.vacancy { border-top: 4px solid #e63946; }
+    .card.result { border-top: 4px solid #2a9d8f; }
+    .card.answerkey { border-top: 4px solid #e76f51; }
+    .card.admitcard { border-top: 4px solid #457b9d; }
+
+    .card-header { padding: 12px 16px; color: white; font-weight: bold; font-size: 15px; text-transform: uppercase; }
+    .vacancy .card-header { background: #e63946; }
+    .result .card-header { background: #2a9d8f; }
+    .answerkey .card-header { background: #e76f51; }
+    .admitcard .card-header { background: #457b9d; }
+
+    .card-list { list-style: none; padding: 8px 0; }
+    .card-list li { border-bottom: 1px solid #f0f0f0; }
+    .card-list li:last-child { border-bottom: none; }
+    .card-list a {
+      display: block;
+      padding: 10px 16px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+    .card-list a:hover { background-color: #f8f9fa; color: #1e3c72; }
+
+    .new-tag {
+      background: #ff4757;
+      color: white;
+      font-size: 10px;
+      padding: 2px 5px;
+      border-radius: 3px;
+      margin-left: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="site-logo">
+      <div>
+        <h1>Shivshakti Job Notification</h1>
+        <p>Latest Jobs, Admit Card, Answer Key aur Result</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-box">
+    <input type="text" id="jobSearch" placeholder="Search vacancy, admit card..." onkeyup="filterItems()">
+  </div>
+
+  <div class="container">
+    <div class="card vacancy">
+      <div class="card-header">Latest Vacancy</div>
+      <ul class="card-list">
+        <li><a href="#" target="_blank">SSC GD Constable Online Form <span class="new-tag">NEW</span></a></li>
+        <li><a href="#" target="_blank">MP Police Constable 2026</a></li>
+        <li><a href="#" target="_blank">BSF Head Constable Ministerial</a></li>
+        <li><a href="#" target="_blank">Railway RPF Recruitment</a></li>
+      </ul>
+    </div>
+
+    <div class="card result">
+      <div class="card-header">Result</div>
+      <ul class="card-list">
+        <li><a href="#" target="_blank">BSF HCM Written Result <span class="new-tag">NEW</span></a></li>
+        <li><a href="#" target="_blank">MP Police Final Merit List</a></li>
+        <li><a href="#" target="_blank">SSC CGL Tier 1 Result</a></li>
+      </ul>
+    </div>
+
+    <div class="card answerkey">
+      <div class="card-header">Answer Key</div>
+      <ul class="card-list">
+        <li><a href="#" target="_blank">BSF HCM Official Answer Key <span class="new-tag">NEW</span></a></li>
+        <li><a href="#" target="_blank">SSC GD Answer Key</a></li>
+        <li><a href="#" target="_blank">MPESB Police Answer Key</a></li>
+      </ul>
+    </div>
+
+    <div class="card admitcard">
+      <div class="card-header">Admit Card</div>
+      <ul class="card-list">
+        <li><a href="#" target="_blank">MP Police Physical Admit Card <span class="new-tag">NEW</span></a></li>
+        <li><a href="#" target="_blank">BSF HCM Typing Test Hall Ticket</a></li>
+        <li><a href="#" target="_blank">SSC MTS Admit Card</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Shivshakti Job Notification</p>
+  </footer>
+
+  <script>
+    function filterItems() {
+      let input = document.getElementById('jobSearch').value.toLowerCase();
+      let lists = document.querySelectorAll('.card-list li');
+      lists.forEach(item => {
+        item.style.display = item.textContent.toLowerCase().includes(input) ? "" : "none";
+      });
+    }
+  </script>
+</body>
+</html>
