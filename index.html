@@ -120,7 +120,186 @@
     <div class="card vacancy">
       <div class="card-header">Latest Vacancy</div>
       <ul class="card-list">
-        <li><a href="#" target="_blank">SSC GD Constable Online Form <span class="new-tag">NEW</span></a></li>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivshakti Job Notification</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background-color: #f4f6f9; color: #333; padding: 15px; }
+    
+    header {
+      background: #ab1414;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 25px;
+    }
+    header h1 { font-size: 24px; }
+    header p { font-size: 14px; margin-top: 5px; }
+
+    .main-box {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Clickable Button/Strip */
+    .job-trigger {
+      background-color: #ffffff;
+      border: 2px solid #ab1414;
+      border-radius: 6px;
+      padding: 14px 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+    .job-trigger:hover {
+      background-color: #fff5f5;
+    }
+    .job-trigger h2 {
+      font-size: 18px;
+      color: #0b4fba;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge-start {
+      background-color: #28a745;
+      color: white;
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .arrow-icon {
+      font-size: 20px;
+      color: #ab1414;
+      font-weight: bold;
+    }
+
+    /* Details Jo Click Karne Par Khulegi */
+    .job-details {
+      display: none; /* Pehle se chhipa rahega */
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-top: none;
+      border-radius: 0 0 6px 6px;
+      padding: 20px;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    .info-table th {
+      background: #ab1414;
+      color: white;
+      padding: 8px 12px;
+      text-align: left;
+      font-size: 14px;
+    }
+    .info-table td {
+      border: 1px solid #ddd;
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+
+    .apply-btn {
+      display: inline-block;
+      background: #ab1414;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    .apply-btn:hover {
+      background: #8e0e0e;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shivshakti Job Notification</h1>
+    <p>Latest Government Jobs, Admit Card aur Results</p>
+  </header>
+
+  <div class="main-box">
+
+    <!-- 1. Ye dikhega site open karte hi -->
+    <div class="job-trigger" onclick="toggleDetails()">
+      <h2>
+        Coast Guard Online Form 2026 
+        <span class="badge-start">START</span>
+      </h2>
+      <span class="arrow-icon" id="arrow">▼ Click karein</span>
+    </div>
+
+    <!-- 2. Ye tabhi khulega jab upar wale par click karenge -->
+    <div class="job-details" id="coastGuardDetails">
+      <h3 style="color: #ab1414; margin-bottom: 8px;">Indian Coast Guard (ICG) Navik & Yantrik 2026</h3>
+      <p style="font-size: 14px; color: #555; margin-bottom: 12px;">Indian Coast Guard ke Navik GD, Navik DB aur Yantrik ke liye online aavedan shuru ho chuke hain.</p>
+
+      <table class="info-table">
+        <tr>
+          <th>Vibhag / Post</th>
+          <td>Navik (GD), Navik (DB) & Yantrik</td>
+        </tr>
+        <tr>
+          <th>Age Limit</th>
+          <td>18 se 22 Varsh (Niyamanusaar Chhut)</td>
+        </tr>
+        <tr>
+          <th>Yogyata (Eligibility)</th>
+          <td>
+            • Navik GD: 12th Pass (Maths & Physics)<br>
+            • Navik DB: 10th Pass<br>
+            • Yantrik: 10th + Engineering Diploma
+          </td>
+        </tr>
+        <tr>
+          <th>Fees</th>
+          <td>General / OBC / EWS: ₹300 | SC / ST: ₹0</td>
+        </tr>
+      </table>
+
+      <a href="https://joinindiancoastguard.cdac.in/" target="_blank" class="apply-btn">Apply Online (Official Link)</a>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleDetails() {
+      var details = document.getElementById("coastGuardDetails");
+      var arrow = document.getElementById("arrow");
+      if (details.style.display === "block") {
+        details.style.display = "none";
+        arrow.innerHTML = "▼ Click karein";
+      } else {
+        details.style.display = "block";
+        arrow.innerHTML = "▲ Band karein";
+      }
+    }
+  </script>
+
+</body>
+</html>
+<li><a href="#" target="_blank">SSC GD Constable Online Form <span class="new-tag">NEW</span></a></li>
         <li><a href="#" target="_blank">MP Police Constable 2026</a></li>
         <li><a href="#" target="_blank">BSF Head Constable Ministerial</a></li>
         <li><a href="#" target="_blank">Railway RPF Recruitment</a></li>
